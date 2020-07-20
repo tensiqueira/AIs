@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/AIs.iml" filepath="$PROJECT_DIR$/.idea/AIs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EC_Tut/EC_Tut.iml" filepath="$PROJECT_DIR$/EC_Tut/EC_Tut.iml" />
       <module fileurl="file://$PROJECT_DIR$/PilotAI/PilotAI.iml" filepath="$PROJECT_DIR$/PilotAI/PilotAI.iml" />
       <module fileurl="file://$PROJECT_DIR$/TrackGIS/TrackGIS.iml" filepath="$PROJECT_DIR$/TrackGIS/TrackGIS.iml" />
     </modules>

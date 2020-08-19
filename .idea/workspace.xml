@@ -19,7 +19,17 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eccfb5ec-78cd-447a-a582-118cbe6a8c7e" name="Default Changelist" comment="" />
+    <list default="true" id="eccfb5ec-78cd-447a-a582-118cbe6a8c7e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/discord.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PilotAI/src/org/pelizzari/test/TestConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PilotAI/PilotAI.iml" beforeDir="false" afterPath="$PROJECT_DIR$/PilotAI/PilotAI.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PilotAI/src/org/pelizzari/mine/Areas.java" beforeDir="false" afterPath="$PROJECT_DIR$/PilotAI/src/org/pelizzari/mine/Areas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PilotAI/src/org/pelizzari/mine/MineVoyages.java" beforeDir="false" afterPath="$PROJECT_DIR$/PilotAI/src/org/pelizzari/mine/MineVoyages.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrackGIS/TrackGIS.iml" beforeDir="false" afterPath="$PROJECT_DIR$/TrackGIS/TrackGIS.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrackGIS/src/org/pelizzari/db/DBConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/TrackGIS/src/org/pelizzari/db/DBConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrackGIS/src/org/pelizzari/time/TimeInterval.java" beforeDir="false" afterPath="$PROJECT_DIR$/TrackGIS/src/org/pelizzari/time/TimeInterval.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -27,6 +37,13 @@
   </component>
   <component name="CodeStyleSettingsInfer">
     <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -42,10 +59,31 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ecj-22.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../postgresql-42.2.14.jar!/" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="discord-application" />
+  </component>
+  <component name="RunManager">
+    <configuration name="TestConnection" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.pelizzari.test.TestConnection" />
+      <module name="PilotAI" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.pelizzari.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.TestConnection" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -72,7 +110,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595281662117</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="ec_tut config">
+      <created>1595281820330</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1595281820330</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -85,32 +130,62 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="jdk_1.8" />
     <MESSAGE value="modules config" />
-    <option name="LAST_COMMIT_MESSAGE" value="modules config" />
+    <MESSAGE value="ec_tut config" />
+    <option name="LAST_COMMIT_MESSAGE" value="ec_tut config" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="760" y="94" key="#Project_Structure" timestamp="1595281789283">
+    <state x="872" y="160" key="#Plugins" timestamp="1597439217958">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state x="760" y="94" key="#Project_Structure/0.0.2560.1040/-1920.0.1920.1040@0.0.2560.1040" timestamp="1595281789283" />
+    <state x="872" y="160" key="#Plugins/0.0.2560.1040/-1920.0.1920.1040@0.0.2560.1040" timestamp="1597439217958" />
+    <state x="760" y="94" key="#Project_Structure" timestamp="1597791494149">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="760" y="94" key="#Project_Structure/0.0.2560.1040/-1920.0.1920.1040@0.0.2560.1040" timestamp="1597791494149" />
     <state x="1110" y="230" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog" timestamp="1595281784574">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="1110" y="230" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog/0.0.2560.1040/-1920.0.1920.1040@0.0.2560.1040" timestamp="1595281784574" />
-    <state x="1408" y="241" key="FileChooserDialogImpl" timestamp="1595281782263">
+    <state x="1408" y="241" key="FileChooserDialogImpl" timestamp="1597791491758">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state x="1408" y="241" key="FileChooserDialogImpl/0.0.2560.1040/-1920.0.1920.1040@0.0.2560.1040" timestamp="1595281782263" />
+    <state x="1408" y="241" key="FileChooserDialogImpl/0.0.2560.1040/-1920.0.1920.1040@0.0.2560.1040" timestamp="1597791491758" />
+    <state width="2517" height="282" key="GridCell.Tab.0.bottom" timestamp="1597791787097">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state width="2517" height="282" key="GridCell.Tab.0.bottom/0.0.2560.1040/-1920.0.1920.1040@0.0.2560.1040" timestamp="1597791787097" />
+    <state width="2517" height="282" key="GridCell.Tab.0.center" timestamp="1597791787097">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state width="2517" height="282" key="GridCell.Tab.0.center/0.0.2560.1040/-1920.0.1920.1040@0.0.2560.1040" timestamp="1597791787097" />
+    <state width="2517" height="282" key="GridCell.Tab.0.left" timestamp="1597791787097">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state width="2517" height="282" key="GridCell.Tab.0.left/0.0.2560.1040/-1920.0.1920.1040@0.0.2560.1040" timestamp="1597791787097" />
+    <state width="2517" height="282" key="GridCell.Tab.0.right" timestamp="1597791787097">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state width="2517" height="282" key="GridCell.Tab.0.right/0.0.2560.1040/-1920.0.1920.1040@0.0.2560.1040" timestamp="1597791787097" />
     <state x="945" y="279" key="NewModule_or_Project.wizard" timestamp="1595281772334">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="945" y="279" key="NewModule_or_Project.wizard/0.0.2560.1040/-1920.0.1920.1040@0.0.2560.1040" timestamp="1595281772334" />
-    <state x="872" y="252" key="Vcs.Push.Dialog.v2" timestamp="1595281669536">
+    <state x="781" y="164" key="SettingsEditor" timestamp="1597439714724">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state x="872" y="252" key="Vcs.Push.Dialog.v2/0.0.2560.1040/-1920.0.1920.1040@0.0.2560.1040" timestamp="1595281669536" />
+    <state x="781" y="164" key="SettingsEditor/0.0.2560.1040/-1920.0.1920.1040@0.0.2560.1040" timestamp="1597439714724" />
+    <state x="872" y="252" key="Vcs.Push.Dialog.v2" timestamp="1595281852501">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="872" y="252" key="Vcs.Push.Dialog.v2/0.0.2560.1040/-1920.0.1920.1040@0.0.2560.1040" timestamp="1595281852501" />
+    <state x="943" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1597439201664">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="943" y="225" width="672" height="678" key="search.everywhere.popup/0.0.2560.1040/-1920.0.1920.1040@0.0.2560.1040" timestamp="1597439201664" />
   </component>
 </project>

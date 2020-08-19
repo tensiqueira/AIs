@@ -7,7 +7,14 @@ import org.pelizzari.gis.Box;
 import org.pelizzari.gis.Point;
 
 public class Areas {
-
+	// Paranagua
+	static Point paranaguaNW = new Point(-25.25f, -48.77f);
+	static Point paranaguaSE = new Point(-25.58f, -48.11f);
+	static Point paranaguaPOI = new Point(-25.52f, -48.5f);
+	// Santos
+	static Point santosNW = new Point(-23.83f, -46.42f);
+	static Point santosSE = new Point(-24.06f, -46.09f);
+	static Point santosPOI = new Point(-23.93f, -46.33f);
 	// Gibraltar
 	static Point gibraltarNW = new Point(37, -6);
 	static Point gibraltarSE = new Point(35, -5);
@@ -77,6 +84,8 @@ public class Areas {
 	public static Map<String, Box> boxes = new HashMap<String, Box>();
 	
 	static {
+		boxes.put("PARANAGUA", new Box(paranaguaNW, paranaguaSE, "PARANAGUA", paranaguaPOI));
+		boxes.put("SANTOS", new Box(santosNW, santosSE, "SANTOS", santosPOI));
 		boxes.put("GIBRALTAR", new Box(gibraltarNW, gibraltarSE, "GIBRALTAR", gibraltarPOI));
 		boxes.put("FINISTERRE", new Box(finisterreNW, finisterreSE, "FINISTERRE"));
 		boxes.put("NOVASCOTIA", new Box(novascotiaNW, novascotiaSE, "NOVASCOTIA", novascotiaPOI));
@@ -88,7 +97,7 @@ public class Areas {
 		boxes.put("GOA", new Box(goaNW, goaSE, "GOA", goaPOI));
 		boxes.put("GUADELOUPE", new Box(guadeloupeNW, guadeloupeSE, "GUADELOUPE", guadeloupePOI));		
 		String areaName = "CALAIS";
-		boxes.put(areaName, new Box(calaisNW, calaisSE, areaName));		
+		boxes.put(areaName, new Box(calaisNW, calaisSE, areaName));
 		areaName = "REDSEA";
 		boxes.put(areaName, new Box(redseaNW, redseaSE, areaName, redseaPOI));		
 		areaName = "LANZAROTE";

@@ -26,7 +26,7 @@ public class TimeInterval {
 		Timestamp startTS1 = startTs;
 		Timestamp startTS2 = null;
 		try {
-			startTS2 = new Timestamp(startTS1.getTsMillisec()+(long)durationInDays*3600*24*1000);
+			startTS2 = new Timestamp(startTS1.getTsMillisec()+(long)durationInDays*3600*24*1000); // same as shift timestamp
 			this.startTs = startTS1;
 			this.endTs = startTS2;
 		} catch (Exception e) {

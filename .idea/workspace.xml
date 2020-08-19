@@ -21,14 +21,6 @@
   <component name="ChangeListManager">
     <list default="true" id="eccfb5ec-78cd-447a-a582-118cbe6a8c7e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PilotAI/src/org/pelizzari/mine/MineVoyages.java" beforeDir="false" afterPath="$PROJECT_DIR$/PilotAI/src/org/pelizzari/mine/MineVoyages.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PilotAI/src/org/pelizzari/mine/NormalizeShipTracks.java" beforeDir="false" afterPath="$PROJECT_DIR$/PilotAI/src/org/pelizzari/mine/NormalizeShipTracks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PilotAI/src/org/pelizzari/mine/ShowMergedShipTracks.java" beforeDir="false" afterPath="$PROJECT_DIR$/PilotAI/src/org/pelizzari/mine/ShowMergedShipTracks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PilotAI/src/org/pelizzari/mine/ShowShipPositions.java" beforeDir="false" afterPath="$PROJECT_DIR$/PilotAI/src/org/pelizzari/mine/ShowShipPositions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PilotAI/src/org/pelizzari/mine/ShowShipTrack.java" beforeDir="false" afterPath="$PROJECT_DIR$/PilotAI/src/org/pelizzari/mine/ShowShipTrack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PilotAI/src/org/pelizzari/mine/ShowShipTracksCrossingBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/PilotAI/src/org/pelizzari/mine/ShowShipTracksCrossingBox.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TrackGIS/src/org/pelizzari/db/Miner.java" beforeDir="false" afterPath="$PROJECT_DIR$/TrackGIS/src/org/pelizzari/db/Miner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TrackGIS/src/org/pelizzari/ship/ShipTrack.java" beforeDir="false" afterPath="$PROJECT_DIR$/TrackGIS/src/org/pelizzari/ship/ShipTrack.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,9 +57,9 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="discord-application" />
   </component>
-  <component name="RunManager" selected="Application.NormalizeShipTracks">
-    <configuration name="MineVoyages" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.pelizzari.mine.MineVoyages" />
+  <component name="RunManager" selected="Application.ShowShipTracksCrossingBox">
+    <configuration name="NormalizeShipTracks" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.pelizzari.mine.NormalizeShipTracks" />
       <module name="PilotAI" />
       <extension name="coverage">
         <pattern>
@@ -79,8 +71,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NormalizeShipTracks" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.pelizzari.mine.NormalizeShipTracks" />
+    <configuration name="ShowMergedShipTracks" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.pelizzari.mine.ShowMergedShipTracks" />
       <module name="PilotAI" />
       <extension name="coverage">
         <pattern>
@@ -133,11 +125,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.NormalizeShipTracks" />
-        <item itemvalue="Application.MineVoyages" />
+        <item itemvalue="Application.ShowShipTracksCrossingBox" />
         <item itemvalue="Application.ShowShipTrack" />
         <item itemvalue="Application.ShowShipPositions" />
-        <item itemvalue="Application.ShowShipTracksCrossingBox" />
+        <item itemvalue="Application.ShowMergedShipTracks" />
+        <item itemvalue="Application.NormalizeShipTracks" />
       </list>
     </recent_temporary>
   </component>
@@ -180,7 +172,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597798733991</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="mined santos/paranagua">
+      <created>1597806443586</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1597806443586</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -220,22 +219,22 @@
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="1408" y="241" key="FileChooserDialogImpl/0.0.2560.1040/-1920.0.1920.1040@0.0.2560.1040" timestamp="1597791491758" />
-    <state width="2517" height="250" key="GridCell.Tab.0.bottom" timestamp="1597805874743">
+    <state width="2517" height="250" key="GridCell.Tab.0.bottom" timestamp="1597807192123">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state width="2517" height="250" key="GridCell.Tab.0.bottom/0.0.2560.1040/-1920.0.1920.1040@0.0.2560.1040" timestamp="1597805874743" />
-    <state width="2517" height="250" key="GridCell.Tab.0.center" timestamp="1597805874743">
+    <state width="2517" height="250" key="GridCell.Tab.0.bottom/0.0.2560.1040/-1920.0.1920.1040@0.0.2560.1040" timestamp="1597807192123" />
+    <state width="2517" height="250" key="GridCell.Tab.0.center" timestamp="1597807192123">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state width="2517" height="250" key="GridCell.Tab.0.center/0.0.2560.1040/-1920.0.1920.1040@0.0.2560.1040" timestamp="1597805874743" />
-    <state width="2517" height="250" key="GridCell.Tab.0.left" timestamp="1597805874741">
+    <state width="2517" height="250" key="GridCell.Tab.0.center/0.0.2560.1040/-1920.0.1920.1040@0.0.2560.1040" timestamp="1597807192123" />
+    <state width="2517" height="250" key="GridCell.Tab.0.left" timestamp="1597807192123">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state width="2517" height="250" key="GridCell.Tab.0.left/0.0.2560.1040/-1920.0.1920.1040@0.0.2560.1040" timestamp="1597805874741" />
-    <state width="2517" height="250" key="GridCell.Tab.0.right" timestamp="1597805874743">
+    <state width="2517" height="250" key="GridCell.Tab.0.left/0.0.2560.1040/-1920.0.1920.1040@0.0.2560.1040" timestamp="1597807192123" />
+    <state width="2517" height="250" key="GridCell.Tab.0.right" timestamp="1597807192123">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state width="2517" height="250" key="GridCell.Tab.0.right/0.0.2560.1040/-1920.0.1920.1040@0.0.2560.1040" timestamp="1597805874743" />
+    <state width="2517" height="250" key="GridCell.Tab.0.right/0.0.2560.1040/-1920.0.1920.1040@0.0.2560.1040" timestamp="1597807192123" />
     <state x="945" y="279" key="NewModule_or_Project.wizard" timestamp="1595281772334">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>

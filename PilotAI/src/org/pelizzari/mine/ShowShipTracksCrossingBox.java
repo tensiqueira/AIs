@@ -28,13 +28,13 @@ import org.pelizzari.time.Timestamp;
 
 public class ShowShipTracksCrossingBox {
 
-	final static String START_DT = "2011-03-01 00:00:00";
-	final static int ANALYSIS_PERIOD_IN_DAYS = 10;
-	final static int SHIPS_LIMIT = 20;
-	final static Box BOX = Areas.getBox("GIBRALTAR");
+	final static String START_DT = "2019-10-01 00:00:00";
+	final static int ANALYSIS_PERIOD_IN_DAYS = 7;
+	final static int SHIPS_LIMIT = 100;
+	final static Box BOX = Areas.getBox("SANTOS");
 	
 
-	final static String OUTPUT_FILE = "c:/master_data/ShipTracks";
+	final static String OUTPUT_FILE = "D:\\Google Drive MB\\Casnav\\Evo-SisTram\\master_data\\ShipTracksCBox";
 	
 	public static void main(String[] args) throws Exception {
 

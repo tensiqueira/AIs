@@ -36,10 +36,10 @@ import org.pelizzari.time.Timestamp;
  */
 public class ShowShipPositions {
 
-	final static String START_DT = "2011-03-01 00:00:00";
-	final static int ANALYSIS_PERIOD_IN_DAYS = 3;
+	final static String START_DT = "2019-10-01 00:00:00";
+	final static int ANALYSIS_PERIOD_IN_DAYS = 7;
 
-	final static String OUTPUT_FILE = "c:/master_data/ShipPos";
+	final static String OUTPUT_FILE = "D:\\Google Drive MB\\Casnav\\Evo-SisTram\\master_data\\ShipPos";
 	
 	public static void main(String[] args) {
 
@@ -67,7 +67,7 @@ public class ShowShipPositions {
 			e.printStackTrace();
 		}
 		
-		Box box = new Box(new Point(70, -60), new Point(-70, 80));
+		Box box = new Box(new Point(-23.29f, -48.91f), new Point(-25.69f, -45.76f));
 		
 		/// Let's mine
 		

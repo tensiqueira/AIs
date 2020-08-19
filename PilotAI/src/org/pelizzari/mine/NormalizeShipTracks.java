@@ -42,8 +42,8 @@ public class NormalizeShipTracks {
 //	static final Box DEPARTURE_AREA = Areas.getBox("GIBRALTAR"); 
 //	static final Box ARRIVAL_AREA = Areas.getBox("GUADELOUPE");
 	static final String YEAR_PERIOD = "WINTER";
-	static final Box DEPARTURE_AREA = Areas.getBox("CHANNEL"); 
-	static final Box ARRIVAL_AREA = Areas.getBox("NOVASCOTIA");
+	static final Box DEPARTURE_AREA = Areas.getBox("PARANAGUA");
+	static final Box ARRIVAL_AREA = Areas.getBox("SANTOS");
 //	static final Box DEPARTURE_AREA = Areas.getBox("LANZAROTE"); 
 //	static final Box ARRIVAL_AREA = Areas.getBox("NATAL");
 //	static final String YEAR_PERIOD = "WINTER";

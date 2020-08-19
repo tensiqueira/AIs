@@ -1,12 +1,14 @@
 package org.pelizzari.ship;
 
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.FileReader;
-import java.io.FileWriter;
-import java.io.IOException;
+import org.pelizzari.db.DBConnection;
+import org.pelizzari.gis.Box;
+import org.pelizzari.gis.Displacement;
+import org.pelizzari.gis.DisplacementSequence;
+import org.pelizzari.gis.Point;
+import org.pelizzari.time.Timestamp;
+
+import java.io.*;
 import java.sql.Connection;
-import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
@@ -14,11 +16,6 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-
-import org.pelizzari.db.DBConnection;
-import org.pelizzari.gis.*;
-import org.pelizzari.time.TimeInterval;
-import org.pelizzari.time.Timestamp;
 
 /**
  * @author andrea@pelizzari.org
@@ -113,16 +110,16 @@ public class ShipTrack extends ShipPositionList {
 		Connection con = DBConnection.getCon();
 		int writeCount = 0;
 		//int errCount = 0;
-				
-		final String TRACK_INSERT = 
-				"INSERT INTO tracks (mmsi, source, period, dep, arr, insert_ts, ts, lat, lon) "+
-				"VALUES ("+
-			    getMmsi() + ", " +
-				"null, " + // source
-				"'" + yearPeriod+ "', " +
-				"'" + depBox.getName() + "', " +
-				"'" + arrBox.getName() + "', " +
-				insertTs + ", ";
+
+		final String TRACK_INSERT =
+				"INSERT INTO tracks (mmsi, source, period, dep, arr, insert_ts, ts, lat, lon) " +
+						"VALUES (" +
+						"'" + getMmsi() + "', " +
+						"null, " + // source
+						"'" + yearPeriod + "', " +
+						"'" + depBox.getName() + "', " +
+						"'" + arrBox.getName() + "', " +
+						insertTs + ", ";
 		
 		try {
 			for (ShipPosition pos : getPosList()) {
@@ -147,7 +144,7 @@ public class ShipTrack extends ShipPositionList {
 				
 		final String SHIP_POSITION_UPDATE = 
 				"UPDATE tracks SET norm_ts = "+normTS.getTsMillisec()/1000 +" "+
-				"WHERE mmsi = " + getMmsi() + " " +
+				"WHERE mmsi = '" + getMmsi() + "' " +
 				"AND period = '" + yearPeriod+ "' " +
 				"AND dep = '" + depBox.getName() + "' " +
 				"AND arr = '" + arrBox.getName() + "' " +

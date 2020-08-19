@@ -21,7 +21,7 @@ import org.pelizzari.time.Timestamp;
 
 public class Miner {
 	
-	final static int MIN_SHIP_TRACK_SIZE = 5;
+	final static int MIN_SHIP_TRACK_SIZE = 3;
 
 	Connection con;
 	
@@ -30,9 +30,9 @@ public class Miner {
 	}
 	
 	public static String convertIntoCommaSeparatedMMSIList(List<Ship> ships) {		
-		String mmsiList = "-1";
+		String mmsiList = "'-1'";
 		for (Ship ship : ships) {
-			mmsiList = mmsiList + "," + ship.getMmsi();
+			mmsiList += ",'" + ship.getMmsi() + "'";
 		}
 		
 		return mmsiList;
@@ -44,7 +44,7 @@ public class Miner {
 
 	
 	String getGeoSQLCondition(Box box) {
-		final String GEO_COND = 
+		final String GEO_COND =
 				"and lat >= "+box.getMinLat()+" "+
 				"and lat <= "+box.getMaxLat()+" "+
 				"and lon >= "+box.getMinLon()+" "+
@@ -65,8 +65,8 @@ public class Miner {
 		String endISODatetime = interval.getEndTsISO();
 
 		final String PERIOD_COND = 
-				"and date(from_unixtime(ts)) >= '"+startISODatetime+"' "+
-				"and date(from_unixtime(ts)) <= '"+endISODatetime+"' ";	
+				"and date(to_timestamp(ts)) >= '"+startISODatetime+"' "+
+				"and date(to_timestamp(ts)) <= '"+endISODatetime+"' ";
 		return PERIOD_COND;		
 	}
 
@@ -278,7 +278,7 @@ public class Miner {
 		final String LIMIT_POS = (limitPositions > 0)?"limit "+limitPositions+" ":"";		
 
 		final String SHIP_POSITION_QUERY = 
-				"SELECT ts, date(from_unixtime(ts)) as ts_date, lat, lon "+
+				"SELECT ts, date(to_timestamp(ts)) as ts_date, lat, lon "+
 				"FROM wpos "+
 			    "WHERE 1=1 "+
 				INCLUDE_MMSI_COND+
@@ -335,7 +335,7 @@ public class Miner {
 	final String LIMIT_POS = (limitPositions > 0)?"limit "+limitPositions+" ":"";
 
 	final String SHIP_POSITION_QUERY = 
-			"SELECT ts, date(from_unixtime(ts)) as ts_date, lat, lon "+
+			"SELECT ts, date(to_timestamp(ts)) as ts_date, lat, lon "+
 			"FROM tracks "+
 		    "WHERE 1=1 "+
 			INCLUDE_MMSI_COND+
@@ -502,14 +502,11 @@ public class Miner {
 	}
 
 	/**
-	 * Return the list of tracks of ships that go from a departure area to an arrival area in a given time interval.
+	 * Return the list of tracks of ships that cross the box area in a given time interval.
 	 * Warning: if one of the boxes is null, return the full track
-	 * @param departureBox
-	 * @param arrivalBox
-	 * @param depInterval period of time in which the ship is in the dep. area (at least 1 position)
-	 * @param voyageDurationInDays max duration of the voyage
-	 * @param includeShips
-	 * @param excludeShips
+	 * @param interval period of time in which the ship is in the box area (at least 1 position)
+	 * @param box
+	 * @param limitTracks
 	 * @return
 	 * @throws Exception
 	 */

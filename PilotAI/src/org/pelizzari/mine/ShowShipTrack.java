@@ -28,11 +28,11 @@ import org.pelizzari.time.Timestamp;
 
 public class ShowShipTrack {
 
-	final static int MMSI = 240028000; //235068861;
-	final static String START_DT = "2011-03-01 00:00:00";
-	final static int ANALYSIS_PERIOD_IN_DAYS = 20;
+	final static int MMSI = 209616000; //235068861;
+	final static String START_DT = "2019-10-01 00:00:00";
+	final static int ANALYSIS_PERIOD_IN_DAYS = 7;
 
-	final static String OUTPUT_FILE = "c:/master_data/ShipTrack";
+	final static String OUTPUT_FILE = "D:\\Google Drive MB\\Casnav\\Evo-SisTram\\master_data\\ShipTrack";
 	
 	public static void main(String[] args) {
 

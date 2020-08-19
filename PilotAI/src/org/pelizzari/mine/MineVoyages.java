@@ -44,7 +44,7 @@ import org.pelizzari.time.Timestamp;
 public class MineVoyages {
 
 	// consider this period to detect ships with a position in the departure area
-	final static int START_PERIOD_IN_DAYS = 3;
+	final static int START_PERIOD_IN_DAYS = 7;
 	final static int MAX_RATE_IN_SECONDS = 600; // max 1 position every 10 minutes
 	
 	static String START_DT; // = "2011-01-01 00:00:00";
@@ -61,7 +61,7 @@ public class MineVoyages {
 	//// Departure
 	static Box DEP_BOX; // = Areas.CAPETOWN;
 	static Box ARR_BOX; // = Areas.REUNION;
-	final static String OUTPUT_DIR = "D:\\\"Google Drive MB\"\\Casnav\\Evo-SisTram\\master_data\\";
+	final static String OUTPUT_DIR = "D:\\Google Drive MB\\Casnav\\Evo-SisTram\\master_data\\";
 	static String OUTPUT_KML_FILE; // = OUTPUT_DIR+"tracks.kml";
 		
 	final static boolean KML_FILE_WITH_DATES = false;
@@ -123,7 +123,8 @@ public class MineVoyages {
 			absPathPropFile =  "D:\\Google Drive MB\\Casnav\\Evo-SisTram\\master_data\\conf\\paranagua-santos.props";
 			System.err.println("Usage: prog properties_file\n-> "+absPathPropFile);
 		}
-		absPathPropFile = args[0];
+		else
+			absPathPropFile = args[0];
 		loadProps(absPathPropFile);
 		
 		Date startDate = new java.util.Date();

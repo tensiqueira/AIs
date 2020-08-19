@@ -37,9 +37,9 @@ import org.pelizzari.time.Timestamp;
  */
 public class ShowMergedShipTracks {
 
-	static final String YEAR_PERIOD = "SPRING";
-	static final Box DEPARTURE_AREA = Areas.getBox("LANZAROTE"); 
-	static final Box ARRIVAL_AREA = Areas.getBox("NATAL");
+	static final String YEAR_PERIOD = "WINTER";
+	static final Box DEPARTURE_AREA = Areas.getBox("PARANAGUA");
+	static final Box ARRIVAL_AREA = Areas.getBox("SANTOS");
 
 //	static final String YEAR_PERIOD = "WINTER";
 //	static final Box DEPARTURE_AREA = Areas.getBox("CAPETOWN"); 
@@ -49,9 +49,9 @@ public class ShowMergedShipTracks {
 //	static final Box DEPARTURE_AREA = Areas.getBox("REDSEA"); 
 //	static final Box ARRIVAL_AREA = Areas.getBox("GOA");
 
-	static final long INSERT_TS = 1445881117;
+	static final long INSERT_TS = -1;//1445881117;
 	
-	final static String OUTPUT_FILE = "c:/master_data/MergedShipTracks";
+	final static String OUTPUT_FILE = "D:\\Google Drive MB\\Casnav\\Evo-SisTram\\master_data\\MergedShipTracks";
 	final static boolean WITH_TRACKS = true;
 	final static boolean WITH_DATES = false;
 	
